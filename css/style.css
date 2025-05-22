@@ -1,6 +1,11 @@
 
 #button{
-    background-color: rgb(231, 145, 248);
-    border-color: rgb(248, 135, 239);
+    background-color: rgb(247, 244, 103);
+    border-color: rgb(250, 248, 133);
     color: black;
+}
+
+#color{
+    background-color: rgb(182, 182, 182);
+   
 }

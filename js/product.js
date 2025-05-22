@@ -1,6 +1,6 @@
 function products() {
     document.getElementById('cardHeader').innerHTML = '<h5>Lista de productos</h5>';
-    const REQRES_ENDPOINT = 'https://api.escuelajs.co/api/v1/products';
+    const REQRES_ENDPOINT = 'https://fakestoreapi.com/products';
     
     fetch(REQRES_ENDPOINT, {
         method: 'GET',
@@ -54,7 +54,7 @@ function products() {
     });
 }
 function getProducts(idProduct) {
-    const REQRES_ENDPOINT = "https://api.escuelajs.co/api/v1/products/" + idProduct;
+    const REQRES_ENDPOINT = "https://fakestoreapi.com/products" + idProduct;
 
     fetch(REQRES_ENDPOINT, {
         method: "GET",

@@ -1,6 +1,6 @@
 function users(page) {
     document.getElementById('cardHeader').innerHTML = '<h5>Listado de usuarios</h5>'
-    const REQRES_ENDPOINT = "https://api.escuelajs.co/api/v1/users";
+    const REQRES_ENDPOINT = "https://fakestoreapi.com/users";
     fetch(REQRES_ENDPOINT, {
       method: "GET",
       headers: {
@@ -73,7 +73,7 @@ function users(page) {
       });
   }
   function getUser(idUser){
-    const REQRES_ENDPOINT = "https://api.escuelajs.co/api/v1/users/"+idUser;
+    const REQRES_ENDPOINT = "https://fakestoreapi.com/users"+idUser;
     fetch(REQRES_ENDPOINT, {
       method: "GET",
       headers: {

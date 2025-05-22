@@ -1,32 +1,32 @@
 document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    const email = document.getElementById('email').value;
+    const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-    login(email, password)
+    login(username, password)
 });
 
 
-function login(email, password){
+function login(username, password){
     localStorage.removeItem('token')
     let message = ''
     let alertType = ''
-    const REQRES_ENDPOINT = 'https://api.escuelajs.co/api/v1/auth/login'
+    const REQRES_ENDPOINT = 'https://fakestoreapi.com/users'
     fetch(REQRES_ENDPOINT, {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
             'x-api-key': 'reqres-free-v1'
         },
-        body: JSON.stringify({email, password})
+        body: JSON.stringify({username, password})
     })
     .then((response) =>{
-        if(response.status === 201){
+        if(response.status === 200){
             alertType = 'success'
             message = 'Inicio de sesion exitoso'
             alertBuilder(alertType, message)
             localStorage.setItem('token', "asdasdadasd12345")
             setTimeout(() =>{
-                location.href = 'admin/dashboard.html'
+                location.href = '../user/user.html'
             }, 3000)//tiempo de espera para entrar a la pagina 
             
         } 
