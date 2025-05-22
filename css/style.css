@@ -1,9 +1,12 @@
+.inicio{
+    color: rgb(248, 186, 229);
+    background-color: rgb(233, 206, 229);
+}
 #button{
     background-color: rgb(239, 160, 255);
     border-color: rgb(255, 144, 246);
     color: black;
 }
-#mainContent{
-    background-color: rgb(214, 198, 213);
-    color: blueviolet;
+#tittle{
+    background-color: rgb(2, 23, 41);
 }
