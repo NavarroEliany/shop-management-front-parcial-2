@@ -1,12 +1,6 @@
-.inicio{
-    color: rgb(248, 186, 229);
-    background-color: rgb(233, 206, 229);
-}
+
 #button{
-    background-color: rgb(239, 160, 255);
-    border-color: rgb(255, 144, 246);
+    background-color: rgb(231, 145, 248);
+    border-color: rgb(248, 135, 239);
     color: black;
-}
-#tittle{
-    background-color: rgb(2, 23, 41);
 }
